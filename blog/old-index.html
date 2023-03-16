@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Blog Posts</title>
+		<link rel="stylesheet" href="/dark/styles.css">
+		<link href="/blog/favicon.png" rel="shortcut icon" type="image/x-icon" />
+	</head>
+	<body>
+		<div class="container">
+			<div id="clock"></div>
+			<div class="bookmark-container">
+				<div class="bookmark-set">
+					<div class="bookmark-title">Technology</div>
+					<div class="bookmark-inner-container">
+						<a class="bookmark" href="/blog/default/">Default</a>
+					</div>
+                </div>
+                <div class="bookmark-set">
+                    <div class="bookmark-title">Philosophy</div>
+                    <div class="bookmark-inner-container">
+                        <a class="bookmark">No Entry</a>
+                        <!-- <a class="bookmark" href="/blog/default/">Default</a>
+                        <a class="bookmark" href="/blog/lamar/">Lamar</a> -->
+                    </div>
+                    
+				</div>
+                <div class="bookmark-set">
+                    <div class="bookmark-title">Lifestyle</div>
+                    <div class="bookmark-inner-container">
+                        <!-- <a class="bookmark" href="/blog/default/">Default</a> -->
+                        <a class="bookmark">No Entry</a>
+                    </div>
+                    
+				</div>
+			</div>
+		</div>
+		<script>
+			// Get current time and format
+			function getTime() {
+				let date = new Date(),
+					min = date.getMinutes(),
+					sec = date.getSeconds(),
+					hour = date.getHours();
+				return "" + (hour < 10 ? ("0" + hour) : hour) + ":" + (min < 10 ? ("0" + min) : min) + ":" + (sec < 10 ? ("0" + sec) : sec);
+			}
+			window.onload = () => {
+				// Set up the clock
+				document.getElementById("clock").innerHTML = getTime();
+				// Set clock interval to tick clock
+				setInterval(() => {
+					document.getElementById("clock").innerHTML = getTime();
+				}, 100);
+			}
+		</script>
+	</body>
+</html>
