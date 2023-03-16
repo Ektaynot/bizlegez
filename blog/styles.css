@@ -11,7 +11,7 @@ body {
   background-color: black;
   border-radius: 25rem;
   /* padding: 3.5em; */
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
 
 }
 
@@ -26,7 +26,7 @@ body {
   color: #b3b3b3;
   /* border-radius: 25rem; */
   padding: 1rem;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
 }
 
 .paragraf {
@@ -40,7 +40,7 @@ body {
   /* line-height: 20px; */
   color: #b3b3b3;
   padding: 4rem;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
 }
 
 .points {
