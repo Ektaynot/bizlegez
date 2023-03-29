@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 :root {
-    background: rgb(123,221,255);
-    background: linear-gradient(90deg, rgba(123,221,255,1) 0%, rgba(21,226,148,1) 37%, rgba(255,89,120,1) 100%);
+  --bg: #83a598;
   --fg: #fbf1c7;
   --secondaryFg: #b3b3b3;
   --containerBg: #282828;
