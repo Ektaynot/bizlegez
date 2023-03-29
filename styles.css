@@ -6,7 +6,6 @@
   --fg: #fbf1c7;
   --secondaryFg: #b3b3b3;
   --containerBg: #282828;
-  --searchBg: var(--containerBg);
   --scrollbarColor: #3f3f3f;
 }
 
