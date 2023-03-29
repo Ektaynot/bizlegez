@@ -25,7 +25,7 @@ body {
 
 #clock {
   font-family: sans-serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 600;
   font-family: 'Roboto Mono';
   color: #697b9e;
@@ -66,7 +66,7 @@ body {
   background-color: var(--containerBg);
   border-radius: 3px;
   font-family: 'Roboto Mono';
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   width: 25%;
   height: 15em;
   margin: 0em 0.5em;
