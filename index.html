@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="tr">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Özlem ve Efe'nin Gezi Sayfası</title>
-		<link rel="stylesheet" href="/styles.css">
-		<link href="/favicon.png" rel="shortcut icon" type="image/x-icon" />
-	</head>
-	<body>
-		<div class="container">
-			<div id="clock"></div>
-			<div class="bookmark-container">
-				<div class="bookmark-set">
-					<div class="bookmark-title">İstanbul</div>
-					<div class="bookmark-inner-container">
-						<a class="bookmark" href="/blog/istanbul/rulo/">Rulo</a>
-						<a class="bookmark" href="/blog/istanbul/tostcudede/">Tostçu Dede</a>
-						<a class="bookmark" href="/blog/istanbul/muhit/">Muhit Bar</a>
-					</div>
-				</div>
-				<div class="bookmark-set">
-					<div class="bookmark-title">Kocaeli</div>
-					<div class="bookmark-inner-container">
-						<a class="bookmark" href="/blog/kocaeli/harvey/">Harvey’s Coffee</a>
-						<a class="bookmark" href="/blog/kocaeli/kagıt/">Kağıt Müzesi</a>
-						<!-- <a class="bookmark" href="https://www.youtube.com/channel/UCqya0M37_5sQbdzBsDzIMPA" target="_blank">Youtube Kanalım</a> -->
-					</div>
-				</div>
-				<div class="bookmark-set">
-					<div class="bookmark-title">Ankara</div>
-					<div class="bookmark-inner-container">
-						<!-- <a class="bookmark" href="https://github.com/ektaynot" target="_blank">Github</a> -->
-					</div>
-				</div>
-				<div class="bookmark-set">
-					<div class="bookmark-title">Çanakkale</div>
-					<div class="bookmark-inner-container">
-						<a class="bookmark" href="/blog/canakkale/bplus/">B Plus</a>
-						<a class="bookmark" href="/blog/canakkale/dolmus/">Dolmuş</a>
-						
-						<!-- <a class="bookmark" href="https://www.keybase.io/ektaynot" target="_blank">Keybase</a> -->
-					</div>
-				</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			// Get current time and format
-			function getTime() {
-				let date = new Date(),
-					min = date.getMinutes(),
-					sec = date.getSeconds(),
-					hour = date.getHours();
-				return "" + (hour < 10 ? ("0" + hour) : hour) + ":" + (min < 10 ? ("0" + min) : min) + ":" + (sec < 10 ? ("0" + sec) : sec);
-			}
-			window.onload = () => {
-				// Set up the clock
-				document.getElementById("clock").innerHTML = getTime();
-				// Set clock interval to tick clock
-				setInterval(() => {
-					document.getElementById("clock").innerHTML = getTime();
-				}, 100);
-			}
-		</script>
-	</body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Özlem ve Efe'nin Gezi Sayfası</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link href="/favicon.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+<div class="container">
+
+  <div id="clock"></div>
+  <div class="bookmark-container">
+
+    <div class="dropdown">
+      <button class="dropbtn">İstanbul</button>
+      <div class="dropdown-content">
+        <a href="/blog/istanbul/rulo/">Rulo</a>
+        <a href="/blog/istanbul/tostcudede/">Tostu Dede</a>
+        <a href="/blog/istanbul/muhit/">Muhit</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Ankara</button>
+      <div class="dropdown-content">
+        <a href="/wip.gif">coffe lab</a>
+        <a href="/wip.gif">last penny</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Çanakkale</button>
+      <div class="dropdown-content">
+        <a href="/wip.gif">makara</a>
+        <a href="/wip.gif">dolmuş</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Kocaeli</button>
+      <div class="dropdown-content">
+        <a href="/wip.gif">Walters</a>
+        <a href="/wip.gif">Sommario</a>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<script>
+  // Get current time and format
+  function getTime() {
+    let date = new Date(),
+      min = date.getMinutes(),
+      sec = date.getSeconds(),
+      hour = date.getHours();
+    return "" + (hour < 10 ? ("0" + hour) : hour) + ":" + (min < 10 ? ("0" + min) : min) + ":" + (sec < 10 ? ("0" + sec) : sec);
+  }
+  window.onload = () => {
+    // Set up the clock
+    document.getElementById("clock").innerHTML = getTime();
+    // Set clock interval to tick clock
+    setInterval(() => {
+      document.getElementById("clock").innerHTML = getTime();
+    }, 100);
+  }
+</script>
+
 </html>
